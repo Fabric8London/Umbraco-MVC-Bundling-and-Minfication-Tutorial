@@ -147,8 +147,10 @@ You can enable bundling in the code.
 ##More information:
 
 Mvc bundling and minification:
+
 https://www.asp.net/mvc/overview/performance/bundling-and-minification
 
 Registering Umbraco application events: 
+
 https://our.umbraco.org/documentation/reference/events/application-startup
 
