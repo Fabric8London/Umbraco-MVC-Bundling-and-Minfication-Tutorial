@@ -1,4 +1,4 @@
-# Umbraco MVC Bundling
+# Umbraco MVC Bundling and Minfication Tutorial
 
 MVC Bundling and Minification can help improve the load time and performance of a site. The majority of [popular browsers](http://www.browserscope.org/?category=network) only allow six parallel requests. This means the initial page load of a site can only request at six files at a time. This can be a problem for sites that require more than six requests and can leave users waiting unnecessarily. The problem can be easily be solved by using bundling and minification. 
 
@@ -6,7 +6,7 @@ Bundling works by compressing the selected css or javascript files into a single
 
 Minification works by reducing the file size by removing unnecessary characters, white spaces and comments without affecting the styles or functionality. The results of the reduction will be placed inside a newly created min file.
 
-In this guide we will show you how you can utilise these techniques in you own Umbraco installation. 
+In this tutorial we will show you how you can utilise these techniques in you own Umbraco installation. 
 
 ## Getting started
 
