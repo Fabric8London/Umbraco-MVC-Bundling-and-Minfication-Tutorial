@@ -7,13 +7,20 @@ using Umbraco.Core;
 
 namespace UmbracoMVCBundling.EventHandlers
 {
-    public class CustomApplicationEventHandler : ApplicationEventHandler
+    public class CustomApplicationEventHandler : IApplicationEventHandler
     {
-        protected override void ApplicationStarting(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
+        public void OnApplicationInitialized(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
+        {
+        }
+
+        public void OnApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
+        {
+
+        }
+
+        public void OnApplicationStarting(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
         {
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-            BundleTable.EnableOptimizations = true;
         }
     }
     
